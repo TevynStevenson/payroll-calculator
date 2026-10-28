@@ -8,7 +8,7 @@ import java.io.*;
 
 
 public class PayrollCalculatorApp {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         //Try to keep main method clean
         //Run methods from outside main
@@ -50,14 +50,13 @@ public class PayrollCalculatorApp {
             //Use to go to the next line of the bufferedreader
                 line = bufferedReader.readLine();
 
-
             }
 
             //Close the reader
             bufferedReader.close();
 
         } catch (Exception e) {
-            throw new RuntimeException(e);
+            System.out.println("Error: " + e.getMessage());
         }
 
 
