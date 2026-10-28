@@ -13,6 +13,18 @@ public class PayrollCalculatorApp {
         //Try to keep main method clean
         //Run methods from outside main
 
+        //Initialize Scanner
+        Scanner input = new Scanner(System.in);
+
+        //Prompt user to input the .csv file they want
+        //Then prompt user for the name of the payroll calculator to create
+        System.out.print("Enter the name of the file to process: ");
+        input.nextLine();
+        System.out.print("Enter the name of the payroll file to create: ");
+        input.nextLine();
+
+
+
         //Initialize FileReader and BufferedReader
         try {
             FileReader fileReader = new FileReader("employees.csv");
